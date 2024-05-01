@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrapi Trevellato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Resets for all Page */
+        html, body{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* START of HOME */
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em .5em;
+            background: rgb(23,97,194);
+            background: linear-gradient(90deg, rgb(7, 37, 75) 50%, rgb(0, 114, 63) 100%);
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+        }
+        a.website_logo{
+            font-weight: 700;
+            font-size: 20pt;
+        }
+        nav a{
+            margin-inline: 5px;
+            font-weight: 600;
+        }
+        /* END of HEADER */
+
+        section{
+            display: flex;
+            background-image: url('./assets/home_bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+        
+        aside{
+            display: flex;
+            align-items: center;
+            padding-inline: 1.2em;
+            background: rgb(23,97,194);
+            background: linear-gradient(90deg, rgb(7, 37, 75) 0%, rgb(7, 37, 75, 0) 100%);
+        }
+
+        .social_icons{
+            display: flex;
+            flex-direction: column;
+            gap: 4em;
+        }
+
+        .social_icons a{
+            font-size: 1.4em;
+            text-decoration: none;
+            color: white;
+        }
+
+        #contactus main{
+            display: flex;
+            justify-content: space-evenly;
+            padding: 10em 0 0 5em;
+            color: white;
+            width: 100%;
+            /* background-color: red; */
+        }
+
+        main h1{
+            font-size: 40pt;
+        }
+
+        main a{
+            color: white;
+            font-weight: 600;
+            font-size: 16pt;
+            text-decoration: none;
+        }
+
+        form{
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            max-width: 500px;
+            padding: 1em;
+            border-radius: 7px;
+            background-color: rgba(7, 37, 75, .5);
+            height: fit-content;
+        }
+
+        input, textarea{
+            background-color: rgba(255, 255, 255, .2);
+            border: 1px solid white;
+            margin-bottom: 1em;
+            padding: .5em 1em;
+            border-radius: 7px;
+        }
+        form button{
+            color: white;
+            padding: .7em 1em;
+            border: none;
+            border-radius: 5px;
+            background-color: rgb(6, 44, 93);
+        }
+        
+        form button:active{
+            background-color: rgb(4, 23, 48);
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <a class="website_logo" href="/">Vrapi Trevellato</a>
+        <nav>
+            <a href="./travel_recommendation.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./contactus.html">Contact Us</a>
+        </nav>
+        <div></div>
+    </header>
+    <!-- HEADER END -->
+
+    <section id="contactus">
+        <aside>
+            <div class="social_icons">
+                <a href="https://twitter.com">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <div>
+                <h1>Contact Us</h1>
+                <a href="#">Get In Touch</a>
+            </div>
+            <form>
+                <label>Name</label>
+                <input type="text" id="name" >
+                <label for="email">Email</label>
+                <input type="email" id="email" >
+                <label for="message">Message</label>
+                <textarea rows="5" id="message"></textarea>
+                <button type="submit">Submit</button>
+            </form>
+        </main>
+    </section>
+</body>
+</html>

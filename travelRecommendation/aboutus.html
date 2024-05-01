@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vrapi Trevellato</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+    <style>
+        /* Resets for all Page */
+        html, body{
+            margin: 0;
+            padding: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+
+        /* START of HOME */
+        header{
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 1em .5em;
+            background: rgb(23,97,194);
+            background: linear-gradient(90deg, rgb(7, 37, 75) 50%, rgb(0, 114, 63) 100%);
+        }
+        header a{
+            color: white;
+            text-decoration: none;
+        }
+        a.website_logo{
+            font-weight: 700;
+            font-size: 20pt;
+        }
+        nav a{
+            margin-inline: 5px;
+            font-weight: 600;
+        }
+        /* END of HEADER */
+
+        section{
+            display: flex;
+            background-image: url('./assets/home_bg.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            min-height: 100vh;
+        }
+
+        aside{
+            display: flex;
+            align-items: center;
+            padding-inline: 1.2em;
+            background: rgb(23,97,194);
+            background: linear-gradient(90deg, rgb(7, 37, 75) 0%, rgb(7, 37, 75, 0) 100%);
+        }
+
+        .social_icons{
+            display: flex;
+            flex-direction: column;
+            gap: 4em;
+        }
+
+        .social_icons a{
+            font-size: 1.4em;
+            text-decoration: none;
+            color: white;
+        }
+
+        #aboutus main{
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            padding: 2em 0 0 5em;
+            color: white;
+        }
+
+        .about_title{
+            font-size: 40pt;
+        }
+        .about_paragraph{
+            max-width: 50em;
+            padding: 1.5em;
+            font-size: 1.2em;
+            background-color: rgba(0, 39, 76, 0.5);
+        }
+        .team_wrapper{
+            display: flex;
+            align-items: center;
+            max-width: 1000px;
+            padding: 1.5em;
+            background-color: rgba(0, 39, 76, 0.5);
+        }
+        .team_wrapper h2{
+            font-size: 26pt;
+        }
+        .card{
+            box-sizing: border-box;
+            display: flex;
+            align-items: start;
+            padding: 1em;
+            margin-inline: 1em;
+            border-radius: 5px;
+            background-color: rgb(0, 39, 76);
+        }
+        .card i{
+            font-size: 22px;
+            padding: 5px;
+            border-radius: 7px;
+            background-color: rgb(0, 74, 114);
+        }
+        .card div{
+            margin-left: 1em;
+        }
+        .card span{
+            background-color: white;
+            color: rgb(0, 74, 114);
+            padding: 5px 25px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- HEADER START -->
+    <header>
+        <a class="website_logo" href="/">Vrapi Trevellato</a>
+        <nav>
+            <a href="./travel_recommendation.html">Home</a>
+            <a href="./aboutus.html">About Us</a>
+            <a href="./contactus.html">Contact Us</a>
+        </nav>
+        <div></div>
+    </header>
+    <!-- HEADER END -->
+    <section id="aboutus">
+        <aside>
+            <div class="social_icons">
+                <a href="https://twitter.com">
+                    <i class="fa-brands fa-twitter"></i>
+                </a>
+                <a href="https://facebook.com">
+                    <i class="fa-brands fa-facebook-f"></i>
+                </a>
+                <a href="https://instagram.com">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+                <a href="https://youtube.com">
+                    <i class="fa-brands fa-youtube"></i>
+                </a>
+            </div>
+        </aside>
+        <main>
+            <h1 class="about_title">ABOUT US</h1>
+            <p class="about_paragraph">
+                At Vrapi Travellato, we are passionate about turning your travel dreams into reality. Founded by avid travelers, our team brings together a wealth of experience and a deep love for exploration. Our mission is simple yet profound: to inspire, guide, and elevate your travel experiences.
+            </p>
+            <article class="team_wrapper">
+                <h2>Our Team</h2>
+                <div class="card">
+                    <i class="employee_img fa-solid fa-user-tie"></i>
+                    <div>
+                        <h3>Relando V.</h3>
+                        <p>Manages high-level vision of the company</p>
+                        <span>CEO</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="employee_img fa-solid fa-user-tie"></i>
+                    <div>
+                        <h3>Tinna S.</h3>
+                        <p>Updates gallery of all best places to travel to</p>
+                        <span>Data Analyst</span>
+                    </div>
+                </div>
+                <div class="card">
+                    <i class="employee_img fa-solid fa-user-tie"></i>
+                    <div>
+                        <h3>Anthony F.</h3>
+                        <p>Takes care of every complexity to enhance your experience</p>
+                        <span>COO</span>
+                    </div>
+                </div>
+            </article>
+        </main>
+    </section>
+</body>
+</html>
